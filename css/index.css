@@ -108,10 +108,12 @@ nav {
 .menu li {
     list-style: none;
     display: inline-block;
+    position: relative;
     /* margin-right: 5px; */
 }
 
 .menu a {
+    display: block;
     padding: 10px 12px;
     color: gray;
     text-decoration: none;
@@ -123,6 +125,47 @@ nav {
 
 .menu a:hover {
     color: #D4A762;
+}
+
+.submenu {
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 5px 0px;
+    background-color: #FFFCF8;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    transition: all ease-in-out .5s;
+}
+
+.submenu li {
+    width: 100%;
+    /* background-color: goldenrod; */
+    list-style: none;
+    display: inline-block;
+}
+
+.submenu a {
+    display: block;
+    color: black;
+    /* background-color: rgb(175, 175, 238); */
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    transition: all ease-in-out .3s;
+}
+
+.submenu a:hover {
+    color: #ffffff;
+    background-color: #D4A762;
+}
+
+.menu li:hover .submenu {
+    display: block;
 }
 
 .header_button {
@@ -255,6 +298,7 @@ nav {
     width: 40%;
     height: 520px;
     padding: 0px 24px;
+    overflow: hidden;
     /* background-color: aqua; */
 }
 
