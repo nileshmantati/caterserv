@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     <!-- font awesome icons -->
     <link rel="stylesheet" href="css/all.min.css">
@@ -31,67 +32,86 @@
 
 <body>
     <!-- <div class="container"> -->
-
     <!-- Header Start -->
-
     <header class="bgcolor">
-        <div class="inner_container">
-            <div class="header row">
-                <div class="name_logo">
-                    <a href="#">
-                        <h1 class="row">Cater <span> Serv </span></h1>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg py-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <h1>Cater <span> Serv </span></h1>
                     </a>
-                </div>
-                <nav>
-                    <ul class="menu">
-                        <li><a href="index.html" style="color: #D4A762;">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="#">Pages
-                                <i class="fa-solid fa-chevron-down fa-xs menu_icon"></i>
-                            </a>
-                            <ul class="submenu">
-                                <li><a href="booking.html">Booking</a></li>
-                                <li><a href="our_blog.html">Our Blog</a></li>
-                                <li><a href="our_team.html">Our Team</a></li>
-                                <li><a href="testimonial.html">Testimonial</a></li>
-                                <li><a href="error_page.html">404 Page</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="header_button row">
-                    <div class="search_box row">
-                        <a href="#">
-                            <i class="fa-solid fa-magnifying-glass search_icon"></i>
-                        </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 col mb-lg-0 justify-content-center column-gap-xl-2">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color: #D4A762;"
+                                    href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- <a class="nav-link" href="#">Link</a> -->
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">Pages <i
+                                        class="fa-solid fa-chevron-down fa-xs menu_icon"></i></a>
+                                <ul class="submenu py-2 ps-0 rounded-2">
+                                    <li><a href="#" class="py-1 ps-3">Booking</a></li>
+                                    <li><a href="#" class="py-1 ps-3">Our Blog</a></li>
+                                    <li><a href="#" class="py-1 ps-3">Our Team</a></li>
+                                    <li><a href="#" class="py-1 ps-3">Testimonial</a></li>
+                                    <li><a href="#" class="py-1 ps-3">404 Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <!-- <a class="nav-link" href="#">Link</a> -->
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="header_button d-flex column-gap-2 column-gap-xl-3">
+                            <div class="search_box">
+                                <a href="#">
+                                    <i class="fa-solid fa-magnifying-glass search_icon"></i>
+                                </a>
+                            </div>
+                            <div class="book_btn">
+                                <a href="#" class="px-4 py-2">Book Now</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="book_btn ml-20">
-                        <a href="#">Book Now</a>
-                    </div>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
     <!-- Header End -->
 
     <!-- Home Section Start -->
-    <section class="bgcolor">
-        <div class="inner_container">
-            <div class="home_section row">
-                <div class="home_section_text_box row al-i-center">
+    <section class="bgcolor py-5">
+        <div class="container">
+            <div class="d-flex py-5 flex-wrap align-items-center justify-content-between row-gap-5">
+                <div class="col-md-12 col-lg-6">
                     <div class="home_section_text">
-                        <small>WELCOME TO CATERSERV</small>
-                        <h1>Book <span> Cater</span>Serv For Your Dream Event</h1>
-                        <a href="#">Book Now</a>
-                        <a href="#">Know More</a>
-
+                        <small class="fs-6 py-2 px-4 rounded-5">WELCOME TO CATERSERV</small>
+                        <h1 class="display-2 mt-4 mb-5">Book <span> Cater</span>Serv For Your Dream Event</h1>
+                        <div class="d-flex flex-wrap column-gap-3">
+                            <a href="#" class="py-2 px-2 py-sm-3 px-sm-5 rounded-5">Book Now</a>
+                            <a href="#" class="py-2 px-2 py-sm-3 px-sm-5 rounded-5">Know More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="home_section_img_box">
+                <div class="home_section_img_box col-md-12 col-lg-5">
                     <img src="img/home.jpg" alt="Home Img" class="wow animate__zoomIn">
                 </div>
             </div>
@@ -100,42 +120,53 @@
     <!-- Home Section End -->
 
     <!-- About Section Start -->
-    <section>
-        <div class="inner_container">
-            <div class="about_section row">
-                <div class="about_section_img_box">
-                    <img src="img/about.jpg" alt="About Img">
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex py-5 justify-content-between flex-wrap">
+                <div class="col-md-12 col-lg-5 py-5 justify-content-between">
+                    <img src="img/about.jpg" alt="About Img" class="rounded-4 overflow-hidden">
                 </div>
-                <div class="about_section_text wow animate__bounce" data-wow-duration="2s">
-                    <small>ABOUT US</small>
-                    <h1>Trusted By 200 + satisfied clients</h1>
-                    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore eit esdioilore magna
-                        aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullaemco laboeeiris nisi ut aliquip ex ea commodo consequat. Duis aute
-                        irure
-                        dolor iesdein reprehendeerit in voluptate velit esse cillum dolore.</p>
+                <div class="col-md-12 col-lg py-5 d-flex align-items-center">
+                    <div class="about_section_text ps-0 ps-md-4 col-12">
+                        <small class="fs-6 py-2 px-4 rounded-5">ABOUT US</small>
+                        <h1 class="display-5 my-4">Trusted By 200 + satisfied clients</h1>
+                        <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore eit esdioilore magna
+                            aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullaemco laboeeiris nisi ut aliquip ex ea commodo consequat. Duis
+                            aute
+                            irure
+                            dolor iesdein reprehendeerit in voluptate velit esse cillum dolore.</p>
 
-                    <div class=" about_specs row">
-                        <div class="about_specs_box row al-i-center">
-                            <i class="fa-solid fa-share about_specs_icon"></i>
-                            <p>Fresh and Fast food Delivery</p>
+                        <div class="about_specs d-flex flex-wrap mb-5">
+                            <div class="col-md-12 col-lg-6">
+                                <div class="about_specs_box py-2 d-flex align-items-center">
+                                    <i class="fa-solid fa-share about_specs_icon me-2"></i>
+                                    <p class="mb-0">Fresh and Fast food Delivery</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                                <div class="about_specs_box py-2 d-flex align-items-center">
+                                    <i class="fa-solid fa-share about_specs_icon me-2"></i>
+                                    <p class="mb-0">24/7 Customer Support</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                                <div class="about_specs_box py-2 d-flex align-items-center">
+                                    <i class="fa-solid fa-share about_specs_icon me-2"></i>
+                                    <p class="mb-0">Easy Customization Options</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                                <div class="about_specs_box py-2 d-flex align-items-center">
+                                    <i class="fa-solid fa-share about_specs_icon me-2"></i>
+                                    <p class="mb-0">Delicious Deals for Delicious Meals</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="about_specs_box row al-i-center">
-                            <i class="fa-solid fa-share about_specs_icon"></i>
-                            <p>24/7 Customer Support</p>
-                        </div>
-                        <div class="about_specs_box row al-i-center">
-                            <i class="fa-solid fa-share about_specs_icon"></i>
-                            <p>Easy Customization Options</p>
-                        </div>
-                        <div class="about_specs_box row al-i-center">
-                            <i class="fa-solid fa-share about_specs_icon"></i>
-                            <p>Delicious Deals for Delicious Meals</p>
-                        </div>
+                        <a href="about.html" class="py-3 px-5 rounded-5">About Us
+                            <i class="fa-solid fa-arrow-right about_icon"></i>
+                        </a>
                     </div>
-                    <a href="about.html">About Us
-                        <i class="fa-solid fa-arrow-right about_icon"></i>
-                    </a>
                 </div>
             </div>
         </div>
@@ -143,28 +174,37 @@
     <!-- About Section End -->
 
     <!-- Fact Section Start -->
-    <section>
-        <div class="inner_container">
-            <div class="fact_section row">
-                <div class="fact_section_left row">
-                    <div class="fact_section_box dis-column">
-                        <i class="fa-solid fa-users fa-4x fact_icon"></i>
-                        <h1>689</h1>
-                        <h2>Happy Customers</h2>
+    <section class="pb-5">
+        <div class="container">
+            <div class="d-flex flex-wrap gap-4 py-5">
+                <div class="fact_section_left col-md-12 col-lg-7 d-flex align-items-center flex-wrap row-gap-4">
+                    <div class="col-12 col-md-4 px-3">
+                        <div
+                            class="fact_section_box py-4 d-flex flex-column align-items-center justify-content-center rounded-4">
+                            <i class="fa-solid fa-users fa-4x fact_icon"></i>
+                            <h1 class="display-5 mt-4">689</h1>
+                            <h6 class="fs-6">Happy Customers</h6>
+                        </div>
                     </div>
-                    <div class="fact_section_box dis-column">
-                        <i class="fa-solid fa-user-gear fa-4x fact_icon"></i>
-                        <h1>107</h1>
-                        <h2>expert chefs</h2>
+                    <div class="col-12 col-md-4 px-3">
+                        <div
+                            class="fact_section_box py-4 d-flex flex-column align-items-center justify-content-center rounded-4">
+                            <i class="fa-solid fa-user-gear fa-4x fact_icon"></i>
+                            <h1 class="display-5 mt-4">107</h1>
+                            <h6 class="fs-6">expert chefs</h6>
+                        </div>
                     </div>
-                    <div class="fact_section_box dis-column">
-                        <i class="fa-solid fa-check fa-4x fact_icon"></i>
-                        <h1>253</h1>
-                        <h2>Events Complete</h2>
+                    <div class="col-12 col-md-4 px-3">
+                        <div
+                            class="fact_section_box py-4 d-flex flex-column align-items-center justify-content-center rounded-4">
+                            <i class="fa-solid fa-check fa-4x fact_icon"></i>
+                            <h1 class="display-5 mt-4">253</h1>
+                            <h6 class="fs-6">Events Complete</h6>
+                        </div>
                     </div>
                 </div>
-                <div class="fact_section_img_box">
-                    <img src="img/fact.jpg" alt="Fact Img">
+                <div class="fact_section_img_box col-md-12 col-lg">
+                    <img src="img/fact.jpg" alt="Fact Img" class="rounded-4 overflow-hidden">
                 </div>
             </div>
         </div>
@@ -173,68 +213,84 @@
 
     <!-- Our Services Section Start -->
     <section>
-        <div class="inner_container">
-            <div class="our_services_section dis-column">
-                <div class="our_services_section_text dis-column">
-                    <small>Our Services</small>
-                    <h1>What We Offer</h1>
+        <div class="container">
+            <div class="d-flex flex-column py-5">
+                <div class="our_services_section_text d-flex flex-column">
+                    <small class="fs-6 py-2 px-4 rounded-5">Our Services</small>
+                    <h1 class="display-5 my-4">What We Offer</h1>
                 </div>
-                <div class="our_services_section_main row">
-                    <div class="our_services_section_box dis-column">
-                        <i class="fa-solid fa-cheese fa-7x service_icon"></i>
-                        <h4>Wedding Services</h4>
-                        <p>Contrary to popular belief, ipsum is not simply random.</p>
-                        <a href="#">Read More</a>
-                        <div class="our_services_section_box_color"></div>
+                <div class="d-flex flex-wrap py-4 row-gap-4">
+                    <div class="col-12 col-md-6 col-lg-3 px-3">
+                        <div class="our_services_section_box px-3 py-4 d-flex flex-column align-items-center rounded-4">
+                            <i class="fa-solid fa-cheese fa-7x service_icon"></i>
+                            <h4 class="mt-4 mb-3">Wedding Services</h4>
+                            <p>Contrary to popular belief, ipsum is not simply random.</p>
+                            <a href="#" class="py-2 px-4 rounded-5">Read More</a>
+                            <div class="our_services_section_box_color rounded-4"></div>
+                        </div>
                     </div>
-                    <div class="our_services_section_box dis-column">
-                        <i class="fa-solid fa-pizza-slice fa-7x service_icon"></i>
-                        <h4>Corporate Catering</h4>
-                        <p>Contrary to popular belief, ipsum is not simply random.</p>
-                        <a href="#">Read More</a>
-                        <div class="our_services_section_box_color"></div>
+                    <div class="col-12 col-md-6 col-lg-3 px-3">
+                        <div class="our_services_section_box px-3 py-4 d-flex flex-column align-items-center rounded-4">
+                            <i class="fa-solid fa-pizza-slice fa-7x service_icon"></i>
+                            <h4 class="mt-4 mb-3">Corporate Catering</h4>
+                            <p>Contrary to popular belief, ipsum is not simply random.</p>
+                            <a href="#" class="py-2 px-4 rounded-5">Read More</a>
+                            <div class="our_services_section_box_color rounded-4"></div>
+                        </div>
                     </div>
-                    <div class="our_services_section_box dis-column">
-                        <i class="fa-solid fa-hotdog fa-7x service_icon"></i>
-                        <h4>Cocktail Reception</h4>
-                        <p>Contrary to popular belief, ipsum is not simply random.</p>
-                        <a href="#">Read More</a>
-                        <div class="our_services_section_box_color"></div>
+                    <div class="col-12 col-md-6 col-lg-3 px-3">
+                        <div class="our_services_section_box px-3 py-4 d-flex flex-column align-items-center rounded-4">
+                            <i class="fa-solid fa-hotdog fa-7x service_icon"></i>
+                            <h4 class="mt-4 mb-3">Cocktail Reception</h4>
+                            <p>Contrary to popular belief, ipsum is not simply random.</p>
+                            <a href="#" class="py-2 px-4 rounded-5">Read More</a>
+                            <div class="our_services_section_box_color rounded-4"></div>
+                        </div>
                     </div>
-                    <div class="our_services_section_box dis-column">
-                        <i class="fa-solid fa-burger fa-7x service_icon"></i>
-                        <h4>Bento Catering</h4>
-                        <p>Contrary to popular belief, ipsum is not simply random.</p>
-                        <a href="#">Read More</a>
-                        <div class="our_services_section_box_color"></div>
+                    <div class="col-12 col-md-6 col-lg-3 px-3">
+                        <div class="our_services_section_box px-3 py-4 d-flex flex-column align-items-center rounded-4">
+                            <i class="fa-solid fa-burger fa-7x service_icon"></i>
+                            <h4 class="mt-4 mb-3">Bento Catering</h4>
+                            <p>Contrary to popular belief, ipsum is not simply random.</p>
+                            <a href="#" class="py-2 px-4 rounded-5">Read More</a>
+                            <div class="our_services_section_box_color rounded-4"></div>
+                        </div>
                     </div>
-                    <div class="our_services_section_box dis-column">
-                        <i class="fa-solid fa-wine-glass fa-7x service_icon"></i>
-                        <h4>Pub Party</h4>
-                        <p>Contrary to popular belief, ipsum is not simply random.</p>
-                        <a href="#">Read More</a>
-                        <div class="our_services_section_box_color"></div>
+                    <div class="col-12 col-md-6 col-lg-3 px-3">
+                        <div class="our_services_section_box px-3 py-4 d-flex flex-column align-items-center rounded-4">
+                            <i class="fa-solid fa-wine-glass fa-7x service_icon"></i>
+                            <h4 class="mt-4 mb-3">Pub Party</h4>
+                            <p>Contrary to popular belief, ipsum is not simply random.</p>
+                            <a href="#" class="py-2 px-4 rounded-5">Read More</a>
+                            <div class="our_services_section_box_color rounded-4"></div>
+                        </div>
                     </div>
-                    <div class="our_services_section_box dis-column">
-                        <i class="fa-solid fa-person-walking fa-7x service_icon"></i>
-                        <h4>Home Delivery</h4>
-                        <p>Contrary to popular belief, ipsum is not simply random.</p>
-                        <a href="#">Read More</a>
-                        <div class="our_services_section_box_color"></div>
+                    <div class="col-12 col-md-6 col-lg-3 px-3">
+                        <div class="our_services_section_box px-3 py-4 d-flex flex-column align-items-center rounded-4">
+                            <i class="fa-solid fa-person-walking fa-7x service_icon"></i>
+                            <h4 class="mt-4 mb-3">Home Delivery</h4>
+                            <p>Contrary to popular belief, ipsum is not simply random.</p>
+                            <a href="#" class="py-2 px-4 rounded-5">Read More</a>
+                            <div class="our_services_section_box_color rounded-4"></div>
+                        </div>
                     </div>
-                    <div class="our_services_section_box dis-column">
-                        <i class="fa-solid fa-wheelchair fa-7x service_icon"></i>
-                        <h4>Sit-down Catering</h4>
-                        <p>Contrary to popular belief, ipsum is not simply random.</p>
-                        <a href="#">Read More</a>
-                        <div class="our_services_section_box_color"></div>
+                    <div class="col-12 col-md-6 col-lg-3 px-3">
+                        <div class="our_services_section_box px-3 py-4 d-flex flex-column align-items-center rounded-4">
+                            <i class="fa-solid fa-wheelchair fa-7x service_icon"></i>
+                            <h4 class="mt-4 mb-3">Sit-down Catering</h4>
+                            <p>Contrary to popular belief, ipsum is not simply random.</p>
+                            <a href="#" class="py-2 px-4 rounded-5">Read More</a>
+                            <div class="our_services_section_box_color rounded-4"></div>
+                        </div>
                     </div>
-                    <div class="our_services_section_box dis-column">
-                        <i class="fa-solid fa-utensils fa-7x service_icon"></i>
-                        <h4>Buffet Catering</h4>
-                        <p>Contrary to popular belief, ipsum is not simply random.</p>
-                        <a href="#">Read More</a>
-                        <div class="our_services_section_box_color"></div>
+                    <div class="col-12 col-md-6 col-lg-3 px-3">
+                        <div class="our_services_section_box px-3 py-4 d-flex flex-column align-items-center rounded-4">
+                            <i class="fa-solid fa-utensils fa-7x service_icon"></i>
+                            <h4 class="mt-4 mb-3">Buffet Catering</h4>
+                            <p>Contrary to popular belief, ipsum is not simply random.</p>
+                            <a href="#" class="py-2 px-4 rounded-5">Read More</a>
+                            <div class="our_services_section_box_color rounded-4"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -243,95 +299,121 @@
     <!-- Our Services Section End -->
 
     <!-- Events Section Start -->
-    <section>
-        <div class="inner_container">
-            <div class="events_section dis-column">
-                <div class="events_section_text dis-column">
-                    <small>latest events</small>
-                    <h1>Our Social Professional Events Gallery</h1>
+    <section class="pb-5">
+        <div class="container">
+            <div class="py-5 d-flex flex-column">
+                <div>
+                    <div class="events_section_text text-center">
+                        <small class="fs-6 py-2 px-4 rounded-5">latest events</small>
+                        <h1 class="display-5 my-4">Our Social Professional Events Gallery</h1>
+                    </div>
                 </div>
-                <div class="events_section_main dis-column">
-                    <div class="events_section__main_type row">
-                        <ul class="row">
-                            <li><a href="#" style="color: black; background-color: #D4A762;">All Events</a></li>
-                            <li><a href="#">Wedding</a></li>
-                            <li><a href="#">Corporate</a></li>
-                            <li><a href="#">Cocktail</a></li>
-                            <li><a href="#">Buffet</a></li>
+                <div class="events_section_main d-flex flex-column py-4 flex-wrap">
+                    <div class="events_section_main_type d-flex justify-content-center pb-5">
+                        <ul class="mb-0 ps-0 d-flex justify-content-center gap-4 flex-wrap">
+                            <li><a href="#" class="fs-6 py-2 px-5 rounded-5"
+                                    style="color: black; background-color: #D4A762;">All Events</a></li>
+                            <li><a href="#" class="fs-6 py-2 px-5 rounded-5">Wedding</a></li>
+                            <li><a href="#" class="fs-6 py-2 px-5 rounded-5">Corporate</a></li>
+                            <li><a href="#" class="fs-6 py-2 px-5 rounded-5">Cocktail</a></li>
+                            <li><a href="#" class="fs-6 py-2 px-5 rounded-5">Buffet</a></li>
                         </ul>
                     </div>
-                    <div class="events_section_boxs row">
-                        <div class="events_section_box">
-                            <img src="img/event_1.jpg" alt="Event Img">
-                            <div class="events_section_box_text">
-                                <h4>Wedding</h4>
-                                <a href="#" class="row">
-                                    <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: black;"></i>
-                                </a>
+                    <div class="d-flex flex-wrap row-gap-4">
+                        <div class="col-12 col-md-6 col-lg-3 px-3">
+                            <div class="events_section_box overflow-hidden rounded-4">
+                                <img src="img/event_1.jpg" alt="Event Img">
+                                <div class="events_section_box_text p-4">
+                                    <h4 class="me-auto">Wedding</h4>
+                                    <!-- <a href="#" class="w-100 h-100">
+                                        <i class="fa-solid fa-magnifying-glass-plus fa-2xl mt-auto"
+                                            style="color: black;"></i>
+                                    </a> -->
+                                </div>
                             </div>
                         </div>
-                        <div class="events_section_box">
-                            <img src="img/event_2.jpg" alt="Event Img">
-                            <div class="events_section_box_text">
-                                <h4>Corporate</h4>
-                                <a href="#" class="row">
-                                    <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: black;"></i>
-                                </a>
+                        <div class="col-12 col-md-6 col-lg-3 px-3">
+                            <div class="events_section_box overflow-hidden rounded-4">
+                                <img src="img/event_2.jpg" alt="Event Img">
+                                <div class="events_section_box_text p-4">
+                                    <h4 class="me-auto">Corporate</h4>
+                                    <!-- <a href="#" class="w-100 h-100">
+                                        <i class="fa-solid fa-magnifying-glass-plus fa-2xl mt-auto"
+                                            style="color: black;"></i>
+                                    </a> -->
+                                </div>
                             </div>
                         </div>
-                        <div class="events_section_box">
-                            <img src="img/event_3.jpg" alt="Event Img">
-                            <div class="events_section_box_text">
-                                <h4>Wedding</h4>
-                                <a href="#" class="row">
-                                    <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: black;"></i>
-                                </a>
+                        <div class="col-12 col-md-6 col-lg-3 px-3">
+                            <div class="events_section_box overflow-hidden rounded-4">
+                                <img src="img/event_3.jpg" alt="Event Img">
+                                <div class="events_section_box_text p-4">
+                                    <h4 class="me-auto">Wedding</h4>
+                                    <!-- <a href="#" class="w-100 h-100">
+                                        <i class="fa-solid fa-magnifying-glass-plus fa-2xl mt-auto"
+                                            style="color: black;"></i>
+                                    </a> -->
+                                </div>
                             </div>
                         </div>
-                        <div class="events_section_box">
-                            <img src="img/event_4.jpg" alt="Event Img">
-                            <div class="events_section_box_text">
-                                <h4>Buffet</h4>
-                                <a href="#" class="row">
-                                    <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: black;"></i>
-                                </a>
+                        <div class="col-12 col-md-6 col-lg-3 px-3">
+                            <div class="events_section_box overflow-hidden rounded-4">
+                                <img src="img/event_4.jpg" alt="Event Img">
+                                <div class="events_section_box_text p-4">
+                                    <h4 class="me-auto">Buffet</h4>
+                                    <!-- <a href="#" class="w-100 h-100">
+                                        <i class="fa-solid fa-magnifying-glass-plus fa-2xl mt-auto"
+                                            style="color: black;"></i>
+                                    </a> -->
+                                </div>
                             </div>
                         </div>
-
-                        <div class="events_section_box">
-                            <img src="img/event_5.jpg" alt="Event Img">
-                            <div class="events_section_box_text">
-                                <h4>Cocktail</h4>
-                                <a href="#" class="row">
-                                    <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: black;"></i>
-                                </a>
+                        <div class="col-12 col-md-6 col-lg-3 px-3">
+                            <div class="events_section_box overflow-hidden rounded-4">
+                                <img src="./img/event_5.jpg" alt="Event Img">
+                                <div class="events_section_box_text p-4">
+                                    <h4 class="me-auto">Cocktail</h4>
+                                    <!-- <a href="#" class="w-100 h-100">
+                                        <i class="fa-solid fa-magnifying-glass-plus fa-2xl mt-auto"
+                                            style="color: black;"></i>
+                                    </a> -->
+                                </div>
                             </div>
                         </div>
-                        <div class="events_section_box">
-                            <img src="img/event_6.jpg" alt="Event Img">
-                            <div class="events_section_box_text">
-                                <h4>Wedding</h4>
-                                <a href="#" class="row">
-                                    <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: black;"></i>
-                                </a>
+                        <div class="col-12 col-md-6 col-lg-3 px-3">
+                            <div class="events_section_box overflow-hidden rounded-4">
+                                <img src="img/event_6.jpg" alt="Event Img">
+                                <div class="events_section_box_text p-4">
+                                    <h4 class="me-auto">Wedding</h4>
+                                    <!-- <a href="#" class="w-100 h-100">
+                                        <i class="fa-solid fa-m mt-autoagnifying-glass-plus fa-2xl"
+                                            style="color: black;"></i>
+                                    </a> -->
+                                </div>
                             </div>
                         </div>
-                        <div class="events_section_box">
-                            <img src="img/event_7.jpg" alt="Event Img">
-                            <div class="events_section_box_text">
-                                <h4>Buffet</h4>
-                                <a href="#" class="row">
-                                    <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: black;"></i>
-                                </a>
+                        <div class="col-12 col-md-6 col-lg-3 px-3">
+                            <div class="events_section_box overflow-hidden rounded-4">
+                                <img src="img/event_7.jpg" alt="Event Img">
+                                <div class="events_section_box_text p-4">
+                                    <h4 class="me-auto">Buffet</h4>
+                                    <!-- <a href="#" class="w-100 h-100">
+                                        <i class="fa-solid fa-m mt-autoagnifying-glass-plus fa-2xl"
+                                            style="color: black;"></i>
+                                    </a> -->
+                                </div>
                             </div>
                         </div>
-                        <div class="events_section_box">
-                            <img src="img/event_8.jpg" alt="Event Img">
-                            <div class="events_section_box_text">
-                                <h4>Corporate</h4>
-                                <a href="#" class="row">
-                                    <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: black;"></i>
-                                </a>
+                        <div class="col-12 col-md-6 col-lg-3 px-3">
+                            <div class="events_section_box overflow-hidden rounded-4">
+                                <img src="img/event_8.jpg" alt="Event Img">
+                                <div class="events_section_box_text p-4">
+                                    <h4 class="me-auto">Corporate</h4>
+                                    <!-- <a href="#" class="w-100 h-100">
+                                        <i class="fa-solid fa-m mt-autoagnifying-glass-plus fa-2xl"
+                                            style="color: black;"></i>
+                                    </a> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -342,121 +424,150 @@
     <!-- Events Section End -->
 
     <!-- Our Menu Section Start -->
-    <section class="bgcolor mt-50">
-        <div class="inner_container">
-            <div class="our_menu_section dis-column">
-                <div class="our_menu_section_text dis-column">
-                    <small>our menu</small>
-                    <h1>Most Popular Food in the World</h1>
+    <section class="bgcolor py-5">
+        <div class="container">
+            <div class="d-flex flex-column">
+                <div class="our_menu_section_text text-center">
+                    <small class="fs-6 py-2 px-4 rounded-5">our menu</small>
+                    <h1 class="display-5 my-4">Most Popular Food in the World</h1>
                 </div>
-                <div class="our_menu_section_main dis-column">
-                    <div class="our_menu_section__main_type row">
-                        <ul class="row">
-                            <li><a href="#" style="color: black; background-color: #D4A762;">Starter</a></li>
-                            <li><a href="#">Main Course</a></li>
-                            <li><a href="#">Drinks</a></li>
-                            <li><a href="#">Offers</a></li>
-                            <li><a href="#">Our Spesial</a></li>
+                <div class="our_menu_section_main d-flex flex-column py-4 flex-wrap">
+                    <div class="our_menu_section__main_type d-flex justify-content-center pb-5">
+                        <ul class="mb-0 ps-0 d-flex justify-content-center gap-4 flex-wrap">
+                            <li><a href="#" class="fs-6 py-2 px-5 rounded-5"
+                                    style="color: black; background-color: #D4A762;">Starter</a></li>
+                            <li><a href="#" class="fs-6 py-2 px-5 rounded-5">Main Course</a></li>
+                            <li><a href="#" class="fs-6 py-2 px-5 rounded-5">Drinks</a></li>
+                            <li><a href="#" class="fs-6 py-2 px-5 rounded-5">Offers</a></li>
+                            <li><a href="#" class="fs-6 py-2 px-5 rounded-5">Our Spesial</a></li>
                         </ul>
                     </div>
-                    <div class="our_menu_section_boxs row">
-                        <div class="our_menu_section_box row">
-                            <div class="our_menu_section_box_img_box">
-                                <img src="img/menu_1.jpg" alt="Not Found">
-                            </div>
-                            <div class="our_menu_section_box_text">
-                                <div class="name_price row ju-between">
-                                    <h4>Paneer</h4>
-                                    <h4><span>$90</span></h4>
+                    <div class="our_menu_section_boxs d-flex flex-wrap pt-4 row-gap-4">
+                        <div class="col-12 col-lg-6">
+                            <div class="our_menu_section_box d-flex align-items-center column-gap-3">
+                                <div class="our_menu_section_box_img_box">
+                                    <img src="img/menu_1.jpg" alt="Not Found" class="rounded-circle">
                                 </div>
-                                <p>Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                <div class="our_menu_section_box_text pe-3">
+                                    <div class="name_price d-flex justify-content-between">
+                                        <h4>Paneer</h4>
+                                        <h4><span>$90</span></h4>
+                                    </div>
+                                    <p class="mt-2">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut
+                                        labore.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="our_menu_section_box row">
-                            <div class="our_menu_section_box_img_box">
-                                <img src="img/menu_2.jpg" alt="Not Found">
-                            </div>
-                            <div class="our_menu_section_box_text">
-                                <div class="name_price row ju-between">
-                                    <h4>Sweet Potato</h4>
-                                    <h4><span>$90</span></h4>
+                        <div class=" col-12 col-lg-6">
+                            <div class="our_menu_section_box d-flex align-items-center column-gap-3">
+                                <div class="our_menu_section_box_img_box">
+                                    <img src="img/menu_2.jpg" alt="Not Found" class="rounded-circle">
                                 </div>
-                                <p>Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                <div class="our_menu_section_box_text pe-3">
+                                    <div class="name_price d-flex justify-content-between">
+                                        <h4>Sweet Potato</h4>
+                                        <h4><span>$90</span></h4>
+                                    </div>
+                                    <p class="mt-2">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut
+                                        labore.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="our_menu_section_box row">
-                            <div class="our_menu_section_box_img_box">
-                                <img src="img/menu_3.jpg" alt="Not Found">
-                            </div>
-                            <div class="our_menu_section_box_text">
-                                <div class="name_price row ju-between">
-                                    <h4>Sabudana Tikki</h4>
-                                    <h4><span>$90</span></h4>
+                        <div class="col-12 col-lg-6">
+                            <div class="our_menu_section_box d-flex align-items-center column-gap-3">
+                                <div class="our_menu_section_box_img_box">
+                                    <img src="img/menu_3.jpg" alt="Not Found" class="rounded-circle">
                                 </div>
-                                <p>Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                <div class="our_menu_section_box_text pe-3">
+                                    <div class="name_price d-flex justify-content-between">
+                                        <h4>Sabudana Tikki</h4>
+                                        <h4><span>$90</span></h4>
+                                    </div>
+                                    <p class="mt-2">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut
+                                        labore.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="our_menu_section_box row">
-                            <div class="our_menu_section_box_img_box">
-                                <img src="img/menu_4.jpg" alt="Not Found">
-                            </div>
-                            <div class="our_menu_section_box_text">
-                                <div class="name_price row ju-between">
-                                    <h4>Pizza</h4>
-                                    <h4><span>$90</span></h4>
+                        <div class="col-12 col-lg-6">
+                            <div class="our_menu_section_box d-flex align-items-center column-gap-3">
+                                <div class="our_menu_section_box_img_box">
+                                    <img src="img/menu_4.jpg" alt="Not Found" class="rounded-circle">
                                 </div>
-                                <p>Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                <div class="our_menu_section_box_text pe-3">
+                                    <div class="name_price d-flex justify-content-between">
+                                        <h4>Pizza</h4>
+                                        <h4><span>$90</span></h4>
+                                    </div>
+                                    <p class="mt-2">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut
+                                        labore.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="our_menu_section_box row">
-                            <div class="our_menu_section_box_img_box">
-                                <img src="img/menu_5.jpg" alt="Not Found">
-                            </div>
-                            <div class="our_menu_section_box_text">
-                                <div class="name_price row ju-between">
-                                    <h4>Bacon</h4>
-                                    <h4><span>$90</span></h4>
+                        <div class="col-12 col-lg-6">
+                            <div class="our_menu_section_box d-flex align-items-center column-gap-3">
+                                <div class="our_menu_section_box_img_box">
+                                    <img src="img/menu_5.jpg" alt="Not Found" class="rounded-circle">
                                 </div>
-                                <p>Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                <div class="our_menu_section_box_text pe-3">
+                                    <div class="name_price d-flex justify-content-between">
+                                        <h4>Bacon</h4>
+                                        <h4><span>$90</span></h4>
+                                    </div>
+                                    <p class="mt-2">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut
+                                        labore.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="our_menu_section_box row">
-                            <div class="our_menu_section_box_img_box">
-                                <img src="img/menu_6.jpg" alt="Not Found">
-                            </div>
-                            <div class="our_menu_section_box_text">
-                                <div class="name_price row ju-between">
-                                    <h4>Chicken</h4>
-                                    <h4><span>$90</span></h4>
+                        <div class="col-12 col-lg-6">
+                            <div class="our_menu_section_box d-flex align-items-center column-gap-3">
+                                <div class="our_menu_section_box_img_box">
+                                    <img src="img/menu_6.jpg" alt="Not Found" class="rounded-circle">
                                 </div>
-                                <p>Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                <div class="our_menu_section_box_text pe-3">
+                                    <div class="name_price d-flex justify-content-between">
+                                        <h4>Chicken</h4>
+                                        <h4><span>$90</span></h4>
+                                    </div>
+                                    <p class="mt-2">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut
+                                        labore.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="our_menu_section_box row">
-                            <div class="our_menu_section_box_img_box">
-                                <img src="img/menu_7.jpg" alt="Not Found">
-                            </div>
-                            <div class="our_menu_section_box_text">
-                                <div class="name_price row ju-between">
-                                    <h4>Blooming</h4>
-                                    <h4><span>$90</span></h4>
+                        <div class="col-12 col-lg-6">
+                            <div class="our_menu_section_box d-flex align-items-center column-gap-3">
+                                <div class="our_menu_section_box_img_box">
+                                    <img src="img/menu_7.jpg" alt="Not Found" class="rounded-circle">
                                 </div>
-                                <p>Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                <div class="our_menu_section_box_text pe-3">
+                                    <div class="name_price d-flex justify-content-between">
+                                        <h4>Blooming</h4>
+                                        <h4><span>$90</span></h4>
+                                    </div>
+                                    <p class="mt-2">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut
+                                        labore.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="our_menu_section_box row">
-                            <div class="our_menu_section_box_img_box">
-                                <img src="img/menu_8.jpg" alt="Not Found">
-                            </div>
-                            <div class="our_menu_section_box_text">
-                                <div class="name_price row ju-between">
-                                    <h4>Sweet</h4>
-                                    <h4><span>$90</span></h4>
+                        <div class="col-12 col-lg-6">
+                            <div class="our_menu_section_box d-flex align-items-center column-gap-3">
+                                <div class="our_menu_section_box_img_box">
+                                    <img src="img/menu_8.jpg" alt="Not Found" class="rounded-circle">
                                 </div>
-                                <p>Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                <div class="our_menu_section_box_text pe-3">
+                                    <div class="name_price d-flex justify-content-between">
+                                        <h4>Sweet</h4>
+                                        <h4><span>$90</span></h4>
+                                    </div>
+                                    <p class="mt-2">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut
+                                        labore.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -467,79 +578,99 @@
     <!-- Our Menu Section End -->
 
     <!-- Book Us Section Start -->
-    <section class="mt-100">
-        <div class="inner_container">
-            <div class="book_us_section row">
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="book_us_section d-flex py-5">
                 <div class="book_us_section_col_1">
                     <img src="img/book_us_img.jpg" alt="Book us">
                 </div>
-                <div class="book_us_section_col_2">
-                    <div class="book_us_section_col_2_text dis-column">
-                        <small>Book Us</small>
-                        <h1>Where you want Our Services</h1>
+                <div class="book_us_section_col_2 py-5 px-4">
+                    <div class="book_us_section_col_2_text d-flex flex-column">
+                        <small class="fs-6 py-2 px-4 rounded-5">Book Us</small>
+                        <h1 class="display-5 my-4">Where you want Our Services</h1>
                     </div>
-                    <div class="book_us_section_col_2_boxs row">
-                        <div class="book_us_section_box">
-                            <select name="select country">
-                                <option selected>Select Country</option>
-                                <option value="1">USA</option>
-                                <option value="2">UK</option>
-                                <option value="3">India</option>
-                            </select>
+                    <div class="book_us_section_col_2_boxs d-flex flex-wrap row-gap-4 mt-3">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="book_us_section_box px-3">
+                                <select name="select country" class="col-12 ps-3 py-2 rounded-3">
+                                    <option selected>Select Country</option>
+                                    <option value="1">Ubook_us_sectionSA</option>
+                                    <option value="2">UK</option>
+                                    <option value="3">India</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="book_us_section_box">
-                            <select name="select city">
-                                <option selected>Select City</option>
-                                <option value="1">Depend On Country</option>
-                                <option value="2">UK</option>
-                                <option value="3">India</option>
-                            </select>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="book_us_section_box px-3">
+                                <select name="select city" class="col-12 ps-3 py-2 rounded-3">
+                                    <option selected>Select City</option>
+                                    <option value="1">Depend On Country</option>
+                                    <option value="2">UK</option>
+                                    <option value="3">India</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="book_us_section_box">
-                            <select name="select Palace">
-                                <option selected>Select Palace</option>
-                                <option value="1">Depend On Country</option>
-                                <option value="2">UK</option>
-                                <option value="3">India</option>
-                            </select>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="book_us_section_box px-3">
+                                <select name="select Palace" class="col-12 ps-3 py-2 rounded-3">
+                                    <option selected>Select Palace</option>
+                                    <option value="1">Depend On Country</option>
+                                    <option value="2">UK</option>
+                                    <option value="3">India</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="book_us_section_box">
-                            <select name="small event">
-                                <option selected>Small Event</option>
-                                <option value="1">Event Type</option>
-                                <option value="2">Big Event</option>
-                                <option value="3">Small Event</option>
-                            </select>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="book_us_section_box px-3">
+                                <select name="small event" class="col-12 ps-3 py-2 rounded-3">
+                                    <option selected>Small Event</option>
+                                    <option value="1">Event Type</option>
+                                    <option value="2">Big Event</option>
+                                    <option value="3">Small Event</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="book_us_section_box">
-                            <select name="no. of palace">
-                                <option selected>No. Of Palace</option>
-                                <option value="1">100 200</option>
-                                <option value="2">300 400</option>
-                                <option value="1">500 600</option>
-                                <option value="2">700 800</option>
-                                <option value="1">900 1000</option>
-                                <option value="2">1000+</option>
-                            </select>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="book_us_section_box px-3">
+                                <select name="no. of palace" class="col-12 ps-3 py-2 rounded-3">
+                                    <option selected>No. Of Palace</option>
+                                    <option value="1">100 200</option>
+                                    <option value="2">300 400</option>
+                                    <option value="1">500 600</option>
+                                    <option value="2">700 800</option>
+                                    <option value="1">900 1000</option>
+                                    <option value="2">1000+</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="book_us_section_box">
-                            <select name="small event">
-                                <option selected>Vegetarian</option>
-                                <option value="1">Vegetarian</option>
-                                <option value="2">Non Vegetarian</option>
-                            </select>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="book_us_section_box px-3">
+                                <select name="small event" class="col-12 ps-3 py-2 rounded-3">
+                                    <option selected>Vegetarian</option>
+                                    <option value="1">Vegetarian</option>
+                                    <option value="2">Non Vegetarian</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="book_us_section_box">
-                            <input type="tel" placeholder="Your Contact No.">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="book_us_section_box px-3">
+                                <input type="tel" placeholder="Your Contact No." class="col-12 ps-3 py-2 rounded-3">
+                            </div>
                         </div>
-                        <div class="book_us_section_box">
-                            <input type="date" placeholder="Select Date">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="book_us_section_box px-3">
+                                <input type="date" placeholder="Select Date" class="col-12 ps-3 py-2 rounded-3">
+                            </div>
                         </div>
-                        <div class="book_us_section_box">
-                            <input type="email" placeholder="Enter Your Email">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="book_us_section_box px-3">
+                                <input type="email" placeholder="Enter Your Email" class="col-12 ps-3 py-2 rounded-3">
+                            </div>
                         </div>
-                        <div class="book_us_section_col_2_boxs_btn row">
-                            <button>Submit Now</button>
+                        <div class="col-12 mt-3">
+                            <div class="d-flex justify-content-center">
+                                <button class="py-3 px-5 rounded-5">Submit Now</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -553,103 +684,111 @@
 
     <!-- Our Team Section Start -->
     <section>
-        <div class="inner_container">
-            <div class="our_team_section dis-column">
-                <div class="our_team_section_text dis-column">
-                    <small>our team</small>
-                    <h1>We have Experienced chef Team</h1>
+        <div class="container">
+            <div class="our_team_section d-flex flex-column">
+                <div class="our_team_section_text text-center">
+                    <small class="fs-6 py-2 px-4 rounded-5">our team</small>
+                    <h1 class="display-5 my-4">We have Experienced chef Team</h1>
                 </div>
-                <div class="our_team_section_main row">
-                    <div class="our_team_section_box">
-                        <div class="our_team_section_img_box">
-                            <img src="img/team_1.jpg" alt="Team Img">
-                            <div class="our_team_section_team_icons dis-column">
-                                <a href="#" class="share row">
-                                    <i class="fa-solid fa-share-nodes fa-xm team_icon"></i>
-                                </a>
-                                <a href="#" class="share_link row">
-                                    <i class="fa-brands fa-facebook-f fa-xm team_icon"></i>
-                                </a>
-                                <a href="#" class="share_link row">
-                                    <i class="fa-brands fa-twitter fa-xm team_icon"></i>
-                                </a>
-                                <a href="#" class="share_link row">
-                                    <i class="fa-brands fa-instagram fa-xm team_icon"></i>
-                                </a>
+                <div class="our_team_section_main d-flex mt-3 flex-wrap row-gap-3">
+                    <div class="col-12 col-md-6 col-lg-3 px-3">
+                        <div class="our_team_section_box rounded-4 overflow-hidden">
+                            <div class="our_team_section_img_box position-relative">
+                                <img src="img/team_1.jpg" alt="Team Img">
+                                <div class="our_team_section_team_icons d-flex flex-column row-gap-2">
+                                    <a href="#" class="share d-flex">
+                                        <i class="fa-solid fa-share-nodes fa-xm team_icon"></i>
+                                    </a>
+                                    <a href="#" class="share_link d-flex">
+                                        <i class="fa-brands fa-facebook-f fa-xm team_icon"></i>
+                                    </a>
+                                    <a href="#" class="share_link d-flex">
+                                        <i class="fa-brands fa-twitter fa-xm team_icon"></i>
+                                    </a>
+                                    <a href="#" class="share_link d-flex">
+                                        <i class="fa-brands fa-instagram fa-xm team_icon"></i>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="our_team_section_box_text dis-column">
-                            <h4>Henry</h4>
-                            <p>Decoration Chef</p>
+                            <div class="our_team_section_box_text pt-3 d-flex flex-column">
+                                <h4>Henry</h4>
+                                <p>Decoration Chef</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="our_team_section_box">
-                        <div class="our_team_section_img_box">
-                            <img src="img/team_2.jpg" alt="Team Img">
-                            <div class="our_team_section_team_icons dis-column">
-                                <a href="#" class="share row">
-                                    <i class="fa-solid fa-share-nodes fa-xm team_icon"></i>
-                                </a>
-                                <a href="#" class="share_link row">
-                                    <i class="fa-brands fa-facebook-f fa-xm team_icon"></i>
-                                </a>
-                                <a href="#" class="share_link row">
-                                    <i class="fa-brands fa-twitter fa-xm team_icon"></i>
-                                </a>
-                                <a href="#" class="share_link row">
-                                    <i class="fa-brands fa-instagram fa-xm team_icon"></i>
-                                </a>
+                    <div class="col-12 col-md-6 col-lg-3 px-3">
+                        <div class="our_team_section_box rounded-4 overflow-hidden">
+                            <div class="our_team_section_img_box position-relative">
+                                <img src="img/team_2.jpg" alt="Team Img">
+                                <div class="our_team_section_team_icons d-flex flex-column row-gap-2">
+                                    <a href="#" class="share d-flex">
+                                        <i class="fa-solid fa-share-nodes fa-xm team_icon"></i>
+                                    </a>
+                                    <a href="#" class="share_link d-flex">
+                                        <i class="fa-brands fa-facebook-f fa-xm team_icon"></i>
+                                    </a>
+                                    <a href="#" class="share_link d-flex">
+                                        <i class="fa-brands fa-twitter fa-xm team_icon"></i>
+                                    </a>
+                                    <a href="#" class="share_link d-flex">
+                                        <i class="fa-brands fa-instagram fa-xm team_icon"></i>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="our_team_section_box_text dis-column">
-                            <h4>James Born</h4>
-                            <p>Executive Chef</p>
+                            <div class="our_team_section_box_text pt-3 d-flex flex-column">
+                                <h4>James Born</h4>
+                                <p>Executive Chef</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="our_team_section_box">
-                        <div class="our_team_section_img_box">
-                            <img src="img/team_3.jpg" alt="Team Img">
-                            <div class="our_team_section_team_icons dis-column">
-                                <a href="#" class="share row">
-                                    <i class="fa-solid fa-share-nodes fa-xm team_icon"></i>
-                                </a>
-                                <a href="#" class="share_link row">
-                                    <i class="fa-brands fa-facebook-f fa-xm team_icon"></i>
-                                </a>
-                                <a href="#" class="share_link row">
-                                    <i class="fa-brands fa-twitter fa-xm team_icon"></i>
-                                </a>
-                                <a href="#" class="share_link row">
-                                    <i class="fa-brands fa-instagram fa-xm team_icon"></i>
-                                </a>
+                    <div class="col-12 col-md-6 col-lg-3 px-3">
+                        <div class="our_team_section_box rounded-4 overflow-hidden">
+                            <div class="our_team_section_img_box position-relative">
+                                <img src="img/team_3.jpg" alt="Team Img">
+                                <div class="our_team_section_team_icons d-flex flex-column row-gap-2">
+                                    <a href="#" class="share d-flex">
+                                        <i class="fa-solid fa-share-nodes fa-xm team_icon"></i>
+                                    </a>
+                                    <a href="#" class="share_link d-flex">
+                                        <i class="fa-brands fa-facebook-f fa-xm team_icon"></i>
+                                    </a>
+                                    <a href="#" class="share_link d-flex">
+                                        <i class="fa-brands fa-twitter fa-xm team_icon"></i>
+                                    </a>
+                                    <a href="#" class="share_link d-flex">
+                                        <i class="fa-brands fa-instagram fa-xm team_icon"></i>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="our_team_section_box_text dis-column">
-                            <h4>Martin Hill</h4>
-                            <p>Kitchen Porter</p>
+                            <div class="our_team_section_box_text pt-3 d-flex flex-column">
+                                <h4>Martin Hill</h4>
+                                <p>Kitchen Porter</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="our_team_section_box">
-                        <div class="our_team_section_img_box">
-                            <img src="img/team_4.jpg" alt="Team Img">
-                            <div class="our_team_section_team_icons dis-column">
-                                <a href="#" class="share row">
-                                    <i class="fa-solid fa-share-nodes fa-xm team_icon"></i>
-                                </a>
-                                <a href="#" class="share_link row">
-                                    <i class="fa-brands fa-facebook-f fa-xm team_icon"></i>
-                                </a>
-                                <a href="#" class="share_link row">
-                                    <i class="fa-brands fa-twitter fa-xm team_icon"></i>
-                                </a>
-                                <a href="#" class="share_link row">
-                                    <i class="fa-brands fa-instagram fa-xm team_icon"></i>
-                                </a>
+                    <div class="col-12 col-md-6 col-lg-3 px-3">
+                        <div class="our_team_section_box rounded-4 overflow-hidden">
+                            <div class="our_team_section_img_box position-relative">
+                                <img src="img/team_4.jpg" alt="Team Img">
+                                <div class="our_team_section_team_icons d-flex flex-column row-gap-2">
+                                    <a href="#" class="share d-flex">
+                                        <i class="fa-solid fa-share-nodes fa-xm team_icon"></i>
+                                    </a>
+                                    <a href="#" class="share_link d-flex">
+                                        <i class="fa-brands fa-facebook-f fa-xm team_icon"></i>
+                                    </a>
+                                    <a href="#" class="share_link d-flex">
+                                        <i class="fa-brands fa-twitter fa-xm team_icon"></i>
+                                    </a>
+                                    <a href="#" class="share_link d-flex">
+                                        <i class="fa-brands fa-instagram fa-xm team_icon"></i>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="our_team_section_box_text dis-column">
-                            <h4>Adam Smith</h4>
-                            <p>Head Chef</p>
+                            <div class="our_team_section_box_text pt-3 d-flex flex-column">
+                                <h4>Adam Smith</h4>
+                                <p>Head Chef</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -659,419 +798,225 @@
     <!-- Our Team Section End -->
 
     <!-- Feedback Section Start -->
-    <section>
-        <div class="inner_container">
-            <div class="feedback_section dis-column">
-                <div class="feedback_section_text dis-column">
-                    <small>testimonial</small>
-                    <h1>What Our Customers says!</h1>
+    <section class="py-5 mt-5">
+        <div class="container">
+            <div class="py-5 d-flex flex-column">
+                <div class="feedback_section_text text-center">
+                    <small class="fs-6 py-2 px-4 rounded-5">testimonial</small>
+                    <h1 class="display-5 my-4">What Our Customers says!</h1>
                 </div>
-                <div class="feedback_section_main dis-column">
+                <div class="feedback_section_main d-flex flex-column overflow-hidden">
                     <div class="feedback_section_slider1 owl-carousel owl-theme mt-10">
-                        <div class="item1 item">
-                            <div class="name_img row">
+                        <div class="item1 item p-4 rounded-3">
+                            <div class="name_img d-flex">
                                 <div class="item_img_box">
                                     <img src="img/feedback_1.jpg" alt="">
                                 </div>
                                 <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
+                                    <i class="fa-solid fa-quote-right fa-3x quote_icon"></i>
                                 </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
+                                <div class="item_name d-flex flex-column justify-content-center ps-3">
+                                    <h1 class="fs-4 mb-1">Person Name</h1>
+                                    <p class="mb-0">Profession</p>
                                 </div>
                             </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
+                            <div class="item_text mt-3">
+                                <div class="rating_stars d-flex">
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
+                                <p class="mb-0 py-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                                    dolore magna
                                     aliqua.</p>
                             </div>
                         </div>
-                        <div class="item1 item">
-                            <div class="name_img row">
+                        <div class="item1 item p-4 rounded-3">
+                            <div class="name_img d-flex">
                                 <div class="item_img_box">
                                     <img src="img/feedback_2.jpg" alt="">
                                 </div>
                                 <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
+                                    <i class="fa-solid fa-quote-right fa-3x quote_icon"></i>
                                 </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
+                                <div class="item_name d-flex flex-column justify-content-center ps-3">
+                                    <h1 class="fs-4 mb-1">Person Name</h1>
+                                    <p class="mb-0">Profession</p>
                                 </div>
                             </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
+                            <div class="item_text mt-3">
+                                <div class="rating_stars d-flex">
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
+                                <p class="mb-0 py-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                                    dolore magna
                                     aliqua.</p>
                             </div>
                         </div>
-                        <div class="item1 item">
-                            <div class="name_img row">
+                        <div class="item1 item p-4 rounded-3">
+                            <div class="name_img d-flex">
                                 <div class="item_img_box">
                                     <img src="img/feedback_3.jpg" alt="">
                                 </div>
                                 <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
+                                    <i class="fa-solid fa-quote-right fa-3x quote_icon"></i>
                                 </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
+                                <div class="item_name d-flex flex-column justify-content-center ps-3">
+                                    <h1 class="fs-4 mb-1">Person Name</h1>
+                                    <p class="mb-0">Profession</p>
                                 </div>
                             </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
+                            <div class="item_text mt-3">
+                                <div class="rating_stars d-flex">
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
+                                <p class="mb-0 py-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                                    dolore magna
                                     aliqua.</p>
                             </div>
                         </div>
-                        <div class="item1 item">
-                            <div class="name_img row">
+                        <div class="item1 item p-4 rounded-3">
+                            <div class="name_img d-flex">
                                 <div class="item_img_box">
                                     <img src="img/feedback_4.jpg" alt="">
                                 </div>
                                 <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
+                                    <i class="fa-solid fa-quote-right fa-3x quote_icon"></i>
                                 </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
-                                </div>
-                            </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
-                                    aliqua.</p>
-                            </div>
-                        </div>
-
-
-                        <div class="item1 item">
-                            <div class="name_img row">
-                                <div class="item_img_box">
-                                    <img src="img/feedback_1.jpg" alt="">
-                                </div>
-                                <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
-                                </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
+                                <div class="item_name d-flex flex-column justify-content-center ps-3">
+                                    <h1 class="fs-4 mb-1">Person Name</h1>
+                                    <p class="mb-0">Profession</p>
                                 </div>
                             </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
+                            <div class="item_text mt-3">
+                                <div class="rating_stars d-flex">
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
-                                    aliqua.</p>
-                            </div>
-                        </div>
-                        <div class="item1 item">
-                            <div class="name_img row">
-                                <div class="item_img_box">
-                                    <img src="img/feedback_2.jpg" alt="">
-                                </div>
-                                <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
-                                </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
-                                </div>
-                            </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
-                                    aliqua.</p>
-                            </div>
-                        </div>
-                        <div class="item1 item">
-                            <div class="name_img row">
-                                <div class="item_img_box">
-                                    <img src="img/feedback_3.jpg" alt="">
-                                </div>
-                                <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
-                                </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
-                                </div>
-                            </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
-                                    aliqua.</p>
-                            </div>
-                        </div>
-                        <div class="item1 item">
-                            <div class="name_img row">
-                                <div class="item_img_box">
-                                    <img src="img/feedback_4.jpg" alt="">
-                                </div>
-                                <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
-                                </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
-                                </div>
-                            </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
+                                <p class="mb-0 py-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                                    dolore magna
                                     aliqua.</p>
                             </div>
                         </div>
                     </div>
 
+
+
                     <div class="feedback_section_slider2 owl-carousel owl-theme mt-30 mb-10">
-                        <div class="item2 item">
-                            <div class="name_img row">
+                        <div class="item2 item p-4 rounded-3">
+                            <div class="name_img d-flex">
                                 <div class="item_img_box">
                                     <img src="img/feedback_1.jpg" alt="">
                                 </div>
                                 <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
+                                    <i class="fa-solid fa-quote-right fa-3x quote_icon"></i>
                                 </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
+                                <div class="item_name d-flex flex-column justify-content-center ps-3">
+                                    <h1 class="fs-4 mb-1">Person Name</h1>
+                                    <p class="mb-0">Profession</p>
                                 </div>
                             </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
+                            <div class="item_text mt-3">
+                                <div class="rating_stars d-flex">
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
+                                <p class="mb-0 py-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                                    dolore magna
                                     aliqua.</p>
                             </div>
                         </div>
-                        <div class="item2 item">
-                            <div class="name_img row">
+                        <div class="item2 item p-4 rounded-3">
+                            <div class="name_img d-flex">
                                 <div class="item_img_box">
                                     <img src="img/feedback_2.jpg" alt="">
                                 </div>
                                 <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
+                                    <i class="fa-solid fa-quote-right fa-3x quote_icon"></i>
                                 </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
+                                <div class="item_name d-flex flex-column justify-content-center ps-3">
+                                    <h1 class="fs-4 mb-1">Person Name</h1>
+                                    <p class="mb-0">Profession</p>
                                 </div>
                             </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
+                            <div class="item_text mt-3">
+                                <div class="rating_stars d-flex">
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
+                                <p class="mb-0 py-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                                    dolore magna
                                     aliqua.</p>
                             </div>
                         </div>
-                        <div class="item2 item">
-                            <div class="name_img row">
+                        <div class="item2 item p-4 rounded-3">
+                            <div class="name_img d-flex">
                                 <div class="item_img_box">
                                     <img src="img/feedback_3.jpg" alt="">
                                 </div>
                                 <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
+                                    <i class="fa-solid fa-quote-right fa-3x quote_icon"></i>
                                 </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
+                                <div class="item_name d-flex flex-column justify-content-center ps-3">
+                                    <h1 class="fs-4 mb-1">Person Name</h1>
+                                    <p class="mb-0">Profession</p>
                                 </div>
                             </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
+                            <div class="item_text mt-3">
+                                <div class="rating_stars d-flex">
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
+                                <p class="mb-0 py-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                                    dolore magna
                                     aliqua.</p>
                             </div>
                         </div>
-                        <div class="item2 item">
-                            <div class="name_img row">
+                        <div class="item2 item p-4 rounded-3">
+                            <div class="name_img d-flex">
                                 <div class="item_img_box">
                                     <img src="img/feedback_4.jpg" alt="">
                                 </div>
                                 <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
+                                    <i class="fa-solid fa-quote-right fa-3x quote_icon"></i>
                                 </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
-                                </div>
-                            </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
-                                    aliqua.</p>
-                            </div>
-                        </div>
-
-
-                        <div class="item2 item">
-                            <div class="name_img row">
-                                <div class="item_img_box">
-                                    <img src="img/feedback_1.jpg" alt="">
-                                </div>
-                                <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
-                                </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
+                                <div class="item_name d-flex flex-column justify-content-center ps-3">
+                                    <h1 class="fs-4 mb-1">Person Name</h1>
+                                    <p class="mb-0">Profession</p>
                                 </div>
                             </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
+                            <div class="item_text mt-3">
+                                <div class="rating_stars d-flex">
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                     <i class="fa-solid fa-star rating_icon"></i>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
-                                    aliqua.</p>
-                            </div>
-                        </div>
-                        <div class="item2 item">
-                            <div class="name_img row">
-                                <div class="item_img_box">
-                                    <img src="img/feedback_2.jpg" alt="">
-                                </div>
-                                <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
-                                </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
-                                </div>
-                            </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
-                                    aliqua.</p>
-                            </div>
-                        </div>
-                        <div class="item2 item">
-                            <div class="name_img row">
-                                <div class="item_img_box">
-                                    <img src="img/feedback_3.jpg" alt="">
-                                </div>
-                                <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
-                                </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
-                                </div>
-                            </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
-                                    aliqua.</p>
-                            </div>
-                        </div>
-                        <div class="item2 item">
-                            <div class="name_img row">
-                                <div class="item_img_box">
-                                    <img src="img/feedback_4.jpg" alt="">
-                                </div>
-                                <div class="quote_icon_box">
-                                    <i class="fa-solid fa-quote-right quote_icon"></i>
-                                </div>
-                                <div class="item_name dis-column">
-                                    <h1>Person Name</h1>
-                                    <p>Profession</p>
-                                </div>
-                            </div>
-                            <div class="item_text">
-                                <div class="rating_stars row">
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                    <i class="fa-solid fa-star rating_icon"></i>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna
+                                <p class="mb-0 py-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                                    dolore magna
                                     aliqua.</p>
                             </div>
                         </div>
@@ -1083,48 +1028,54 @@
     <!-- Feedback Section End -->
 
     <!-- Blog Section Start -->
-    <section>
-        <div class="inner_container">
-            <div class="blog_section dis-column">
-                <div class="blog_section_text dis-column">
-                    <small>our blog</small>
-                    <h1>Be First Who Read News</h1>
+    <section class="py-5">
+        <div class="container">
+            <div class="blog_section d-flex flex-column">
+                <div class="blog_section_text text-center">
+                    <small class="fs-6 py-2 px-4 rounded-5">our blog</small>
+                    <h1 class="display-5 my-4">Be First Who Read News</h1>
                 </div>
-                <div class="blog_section_main row">
-                    <div class="blog_section_box dis-column">
-                        <div class="blog_section_img_box">
-                            <img src="img/blog-1.jpg" alt="Not Found">
-                        </div>
-                        <div class="blog_section_box_text row">
-                            <div class="blog_section_box_date dis-column">
-                                <p>16</p>
-                                <p>Sep</p>
+                <div class="blog_section_main d-flex flex-wrap">
+                    <div class="col-12 col-md-6 col-lg-4 px-3">
+                        <div class="blog_section_box d-flex flex-column align-items-center">
+                            <div class="blog_section_img_box rounded-4 overflow-hidden">
+                                <img src="img/blog-1.jpg" alt="Not Found">
                             </div>
-                            <a href="#">How to get more test in your food from</a>
+                            <div class="blog_section_box_text d-flex rounded-3 overflow-hidden">
+                                <div class="blog_section_box_date p-3 d-flex flex-column">
+                                    <p class="mb-0">16</p>
+                                    <p class="mb-0">Sep</p>
+                                </div>
+                                <a href="#" class="p-3">How to get more test in your food from</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="blog_section_box dis-column">
-                        <div class="blog_section_img_box">
-                            <img src="img/blog-2.jpg" alt="Not Found">
-                        </div>
-                        <div class="blog_section_box_text row">
-                            <div class="blog_section_box_date dis-column">
-                                <p>16</p>
-                                <p>Sep</p>
+                    <div class="col-12 col-md-6 col-lg-4 px-3">
+                        <div class="blog_section_box d-flex flex-column align-items-center">
+                            <div class="blog_section_img_box rounded-4 overflow-hidden">
+                                <img src="img/blog-2.jpg" alt="Not Found">
                             </div>
-                            <a href="#">How to get more test in your food from</a>
+                            <div class="blog_section_box_text d-flex rounded-3 overflow-hidden">
+                                <div class="blog_section_box_date p-3 d-flex flex-column">
+                                    <p class="mb-0">16</p>
+                                    <p class="mb-0">Sep</p>
+                                </div>
+                                <a href="#" class="p-3">How to get more test in your food from</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="blog_section_box dis-column">
-                        <div class="blog_section_img_box">
-                            <img src="img/blog-3.jpg" alt="Not Found">
-                        </div>
-                        <div class="blog_section_box_text row">
-                            <div class="blog_section_box_date dis-column">
-                                <p>16</p>
-                                <p>Sep</p>
+                    <div class="col-12 col-md-6 col-lg-4 px-3">
+                        <div class="blog_section_box d-flex flex-column align-items-center">
+                            <div class="blog_section_img_box rounded-4 overflow-hidden">
+                                <img src="img/blog-3.jpg" alt="Not Found">
                             </div>
-                            <a href="#">How to get more test in your food from</a>
+                            <div class="blog_section_box_text d-flex rounded-3 overflow-hidden">
+                                <div class="blog_section_box_date p-3 d-flex flex-column">
+                                    <p class="mb-0">16</p>
+                                    <p class="mb-0">Sep</p>
+                                </div>
+                                <a href="#" class="p-3">How to get more test in your food from</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1134,66 +1085,76 @@
     <!-- Blog Section End -->
 
     <!-- Footer Section Start -->
-    <footer>
-        <div class="inner_container">
-            <div class="footer_section row">
-                <div class="footer_box1">
-                    <h1>Cater<span>Serv</span></h1>
-                    <p>There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs condmentum leo massamollis its
-                        estiegittis miristum.</p>
-                    <div class="footer_icons row">
-                        <a href="#" class="row ju-center al-i-center">
-                            <i class="fa-brands fa-facebook-f footer_icon"></i>
-                        </a>
-                        <a href="#" class="row ju-center al-i-center">
-                            <i class="fa-brands fa-twitter footer_icon"></i>
-                        </a>
-                        <a href="#" class="row ju-center al-i-center">
-                            <i class="fa-brands fa-instagram footer_icon"></i>
-                        </a>
-                        <a href="#" class="row ju-center al-i-center">
-                            <i class="fa-brands fa-linkedin-in footer_icon"></i>
-                        </a>
+    <footer class="py-5">
+        <div class="container">
+            <div class="footer_section py-5 mb-5 d-flex flex-wrap row-gap-4">
+                <div class="col-12 col-md-4 col-lg-3 ps-3 ps-lg-0 pe-3">
+                    <div class="footer_box1">
+                        <h1 class="mb-4">Cater<span>Serv</span></h1>
+                        <p>There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs condmentum leo massamollis
+                            its
+                            estiegittis miristum.</p>
+                        <div class="footer_icons d-flex mt-4 gap-2">
+                            <a href="#" class="d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fa-brands fa-facebook-f footer_icon"></i>
+                            </a>
+                            <a href="#" class="d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fa-brands fa-twitter footer_icon"></i>
+                            </a>
+                            <a href="#" class="d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fa-brands fa-instagram footer_icon"></i>
+                            </a>
+                            <a href="#" class="d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fa-brands fa-linkedin-in footer_icon"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="footer_box2">
-                    <h4>Special Facilities</h4>
-                    <div class="footer_menu dis-column">
-                        <a href="#"><i class="fa-solid fa-check fa-1x footer_menu"></i> Cheese Burger</a>
-                        <a href="#"><i class="fa-solid fa-check fa-1x footer_menu"></i> Sandwich</a>
-                        <a href="#"><i class="fa-solid fa-check fa-1x footer_menu"></i> Panner Burger</a>
-                        <a href="#"><i class="fa-solid fa-check fa-1x footer_menu"></i> Special Sweets</a>
+                <div class="col-12 col-md-4 col-lg-3 px-3">
+                    <div class="footer_box2">
+                        <h4 class="mb-4 pt-2">Special Facilities</h4>
+                        <div class="footer_menu d-flex flex-column row-gap-3">
+                            <a href="#"><i class="fa-solid fa-check fa-1x footer_menu"></i> Cheese Burger</a>
+                            <a href="#"><i class="fa-solid fa-check fa-1x footer_menu"></i> Sandwich</a>
+                            <a href="#"><i class="fa-solid fa-check fa-1x footer_menu"></i> Panner Burger</a>
+                            <a href="#"><i class="fa-solid fa-check fa-1x footer_menu"></i> Special Sweets</a>
+                        </div>
                     </div>
                 </div>
-                <div class="footer_box3">
-                    <h4>Contact Us</h4>
-                    <div class="footer_menu dis-column">
-                        <p><i class="fa-solid fa-location-dot fa-1x footer_menu"></i> 123 Street, New York, USA</p>
-                        <p><i class="fa-solid fa-phone fa-1x footer_menu"></i>(+012) 3456 7890 123</p>
-                        <p><i class="fa-solid fa-envelope fa-1x footer_menu"></i>info@example.com</p>
-                        <p><i class="fa-solid fa-clock fa-1x footer_menu"></i>26/7 Hours Service</p>
+                <div class="col-12 col-md-4 col-lg-3 px-3">
+                    <div class="footer_box3">
+                        <h4 class="mb-4 pt-2">Contact Us</h4>
+                        <div class="footer_menu d-flex flex-column">
+                            <p><i class="fa-solid fa-location-dot fa-1x me-2 footer_menu"></i> 123 Street, New York, USA
+                            </p>
+                            <p><i class="fa-solid fa-phone fa-1x me-2 footer_menu"></i>(+012) 3456 7890 123</p>
+                            <p><i class="fa-solid fa-envelope fa-1x me-2 footer_menu"></i>info@example.com</p>
+                            <p><i class="fa-solid fa-clock fa-1x me-2 footer_menu"></i>26/7 Hours Service</p>
+                        </div>
                     </div>
                 </div>
-                <div class="footer_box4">
-                    <h4>Social Gallery</h4>
-                    <div class="footer_gallery row">
-                        <div class="footer_gallery_img_box">
-                            <img src="img/menu_1.jpg" alt="Footer Img">
-                        </div>
-                        <div class="footer_gallery_img_box">
-                            <img src="img/menu_2.jpg" alt="Footer Img">
-                        </div>
-                        <div class="footer_gallery_img_box">
-                            <img src="img/menu_3.jpg" alt="Footer Img">
-                        </div>
-                        <div class="footer_gallery_img_box">
-                            <img src="img/menu_4.jpg" alt="Footer Img">
-                        </div>
-                        <div class="footer_gallery_img_box">
-                            <img src="img/menu_5.jpg" alt="Footer Img">
-                        </div>
-                        <div class="footer_gallery_img_box">
-                            <img src="img/menu_6.jpg" alt="Footer Img">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="footer_box4">
+                        <h4 class="mb-4 pt-2">Social Gallery</h4>
+                        <div class="footer_gallery d-flex flex-wrap gap-2">
+                            <div class="footer_gallery_img_box p-2 rounded-circle">
+                                <img src="img/menu_1.jpg" alt="Footer Img">
+                            </div>
+                            <div class="footer_gallery_img_box p-2 rounded-circle">
+                                <img src="img/menu_2.jpg" alt="Footer Img">
+                            </div>
+                            <div class="footer_gallery_img_box p-2 rounded-circle">
+                                <img src="img/menu_3.jpg" alt="Footer Img">
+                            </div>
+                            <div class="footer_gallery_img_box p-2 rounded-circle">
+                                <img src="img/menu_4.jpg" alt="Footer Img">
+                            </div>
+                            <div class="footer_gallery_img_box p-2 rounded-circle">
+                                <img src="img/menu_5.jpg" alt="Footer Img">
+                            </div>
+                            <div class="footer_gallery_img_box p-2 rounded-circle">
+                                <img src="img/menu_6.jpg" alt="Footer Img">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1203,18 +1164,18 @@
     <!-- Footer Section End -->
 
     <!-- Copy Right Section Start -->
-    <div class="copyright">
-        <div class="inner_container">
-            <div class="copyright_section row">
-                <div class="copyright_left row">
+    <div class="copyright bg-black py-3">
+        <div class="container">
+            <div class="copyright_section d-flex justify-content-between flex-wrap row-gap-2">
+                <div class="copyright_left d-flex text-center text-md-start">
                     <a href="#">
                         <i class="fa-solid fa-copyright fa-1x mr-5" style="color: #ffffff;"></i>
                         <span>Your Site Name</span>
                     </a>
-                    <p>, All right reserved.</p>
+                    <p class="mb-0">, All right reserved.</p>
                 </div>
-                <div class="copyright_right row">
-                    <p>
+                <div class="copyright_right d-flex">
+                    <p class="mb-0 text-center text-md-end">
                         Designed By
                         <a href="#">Nilesh Mantati</a>
                         Distributed By
@@ -1228,6 +1189,7 @@
 
     <!-- </div> -->
 </body>
+<script src="./js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/wow.min.js"></script>
